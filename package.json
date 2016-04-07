@@ -2,5 +2,7 @@
   "name": "socket-test",
   "version": "0.0.1",
   "description": "Testing out socket.io",
-  "dependencies": {}
+  "dependencies": {
+    "express": "^4.10.2"
+  }
 }
