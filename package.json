@@ -1,7 +1,10 @@
 {
   "name": "socket-test",
   "version": "0.0.1",
-  "description": "Testing out socket.io",
+  "description": "Testing out socket.io, following the basic chat tutorial: http://socket.io/get-started/chat/",
+  "author": "Chris Swithinbank <swithinbank@gmail.com> (http://chrisswithinbank.net/)",
+  "repository": "delucis/socket-test",
+  "license": "GPL-3.0",
   "dependencies": {
     "express": "^4.10.2",
     "socket.io": "^1.4.5"
