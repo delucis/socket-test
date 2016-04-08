@@ -1,8 +1,11 @@
 var port = process.env.PORT || 3000
-var app = require('express')();
+var express = require('express');
+var app = express();
 var http = require('http').createServer(app);
 var io = require('socket.io').listen(http);
 var moniker = require('moniker');
+
+app.use(express.static('public'));
 
 app.get('/', function(req, res){
   res.sendfile('index.html');
