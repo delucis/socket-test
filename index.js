@@ -1,7 +1,7 @@
 var port = process.env.PORT || 3000
 var app = require('express')();
-var http = require('http').Server(app);
-var io = require('socket.io')(http);
+var http = require('http').createServer(app);
+var io = require('socket.io').listen(http);
 var moniker = require('moniker');
 
 app.get('/', function(req, res){
