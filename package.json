@@ -14,6 +14,6 @@
     "node": "5.9.x"
   },
   "scripts": {
-    "start": "node index.js"
+    "start": "node app.js"
   }
 }
