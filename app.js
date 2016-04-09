@@ -11,6 +11,10 @@ app.get('/', function(req, res){
   res.sendfile('index.html');
 });
 
+app.get('/performer/', function(req, res){
+  res.sendfile('performer/index.html');
+});
+
 io.on('connection', function(socket){
   var id = moniker.choose();
   console.log(id + ' connected.');
