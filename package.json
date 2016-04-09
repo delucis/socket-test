@@ -6,6 +6,7 @@
   "repository": "delucis/socket-test",
   "license": "GPL-3.0",
   "dependencies": {
+    "basic-auth": "^1.0.3",
     "express": "^4.10.2",
     "moniker": "^0.1.2",
     "socket.io": "^1.4.5"
