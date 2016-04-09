@@ -27,6 +27,10 @@ io.on('connection', function(socket){
     io.emit('chat message', named_msg);
     console.log(named_msg);
   });
+  socket.on('menu select', function(sel) {
+    io.emit('menu select', sel);
+    console.log(sel);
+  });
 });
 
 http.listen(port, function(){
