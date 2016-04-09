@@ -8,11 +8,11 @@ var moniker = require('moniker');
 app.use(express.static('public'));
 
 app.get('/', function(req, res){
-  res.sendfile('index.html');
+  res.sendFile(__dirname + '/index.html');
 });
 
 app.get('/performer/', function(req, res){
-  res.sendfile('performer/index.html');
+  res.sendFile(__dirname + '/performer/index.html');
 });
 
 io.on('connection', function(socket){
