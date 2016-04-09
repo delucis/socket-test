@@ -8,10 +8,16 @@ Download the repository:
 git clone https://github.com/delucis/socket-test.git
 ```
 
-Run locally:
+Install dependencies:
 
 ```sh
 cd socket-test
+npm install
+```
+
+Run locally:
+
+```sh
 npm start
 ```
 
