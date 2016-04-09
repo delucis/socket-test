@@ -4,6 +4,7 @@ var app = express();
 var http = require('http').createServer(app);
 var io = require('socket.io').listen(http);
 var moniker = require('moniker');
+var utils = require('./utils');
 
 app.use(express.static('public'));
 
@@ -11,7 +12,7 @@ app.get('/', function(req, res){
   res.sendFile(__dirname + '/index.html');
 });
 
-app.get('/performer/', function(req, res){
+app.get('/performer/', utils.auth('union', 'frame'), function(req, res){
   res.sendFile(__dirname + '/performer/index.html');
 });
 
