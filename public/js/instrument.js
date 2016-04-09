@@ -9,6 +9,6 @@ $(document).ready(function() {
     $('#messages').append($('<li>').text(msg));
   });
   socket.on('menu select', function(sel){
-    console.log("selected item: " + sel);
+    $('#num').text(sel);
   });
 });
