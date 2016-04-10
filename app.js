@@ -18,6 +18,12 @@ app.get('/performer/', utils.auth('union', 'frame'), function(req, res){
 
 io.on('connection', function(socket){
   var id = moniker.choose();
+  socket.on('newSocket', function(room){
+    socket.join(room);
+    if (room === 'instruments') {
+      socket.instrumentName = id;
+    }
+  });
   console.log(id + ' connected.');
   socket.on('disconnect', function(){
     console.log(id + ' disconnected.');
