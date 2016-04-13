@@ -9,12 +9,14 @@
     "basic-auth": "^1.0.3",
     "express": "^4.10.2",
     "moniker": "^0.1.2",
+    "snyk": "^1.13.2",
     "socket.io": "^1.4.5"
   },
   "engines": {
     "node": "5.9.x"
   },
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "test": "snyk test"
   }
 }
